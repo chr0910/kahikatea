@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Noto+Serif+JP&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Serif JP', serif;
+  letter-spacing: 3px;
+}
+
+/* bubbles */
+@keyframes move {
+  100% {
+      transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+.background span {
+  width: 50vmin;
+  height: 50vmin;
+  border-radius: 50vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 45;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 10;
+}
+.background span:nth-child(0) {
+  color: rgba(255, 253, 209, 0.2);
+  top: 2%;
+  left: 51%;
+  animation-duration: 37s;
+  animation-delay: -21s;
+  transform-origin: 21vw 11vh;
+  box-shadow: -100vmin 0 12.756131537979913vmin currentColor;
+}
+.background span:nth-child(1) {
+  color: rgba(255, 253, 209, 0.2);
+  top: 74%;
+  left: 30%;
+  animation-duration: 10s;
+  animation-delay: -9s;
+  transform-origin: 20vw -10vh;
+  box-shadow: -100vmin 0 12.55618854121666vmin currentColor;
+}
+.background span:nth-child(2) {
+  color: rgba(255, 253, 209, 0.2);
+  top: 60%;
+  left: 87%;
+  animation-duration: 45s;
+  animation-delay: -2s;
+  transform-origin: -20vw -17vh;
+  box-shadow: -100vmin 0 13.419783692679871vmin currentColor;
+}
+.background span:nth-child(3) {
+  color: rgba(255, 253, 209, 0.2);
+  top: 38%;
+  left: 14%;
+  animation-duration: 26s;
+  animation-delay: -19s;
+  transform-origin: 22vw 11vh;
+  box-shadow: 100vmin 0 12.951846025844958vmin currentColor;
+}
+.background span:nth-child(4) {
+  color: rgba(255, 253, 209, 0.2);
+  top: 22%;
+  left: 92%;
+  animation-duration: 23s;
+  animation-delay: -33s;
+  transform-origin: 23vw 4vh;
+  box-shadow: -100vmin 0 12.796491047996744vmin currentColor;
+}
+.background span:nth-child(5) {
+  color: rgba(255, 253, 209, 0.2);
+  top: 91%;
+  left: 50%;
+  animation-duration: 32s;
+  animation-delay: -26s;
+  transform-origin: -4vw 18vh;
+  box-shadow: -100vmin 0 12.824590787475522vmin currentColor;
+}
+.background span:nth-child(6) {
+  color: rgba(255, 253, 209, 0.2);
+  top: 63%;
+  left: 57%;
+  animation-duration: 53s;
+  animation-delay: -14s;
+  transform-origin: 21vw -22vh;
+  box-shadow: -100vmin 0 12.538511503636677vmin currentColor;
+}
+.background span:nth-child(7) {
+  color: rgba(255, 253, 209, 0.2);
+  top: 30%;
+  left: 74%;
+  animation-duration: 53s;
+  animation-delay: -10s;
+  transform-origin: -24vw -20vh;
+  box-shadow: 100vmin 0 12.618665821783303vmin currentColor;
+}
+
