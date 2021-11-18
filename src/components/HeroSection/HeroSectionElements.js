@@ -22,6 +22,15 @@ export const HeroBg = styled.div`
     width: 60%;
     height: 100%;
     overflow: hidden;
+
+    @media screen and (max-width: 940px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 600px) {
+        right: 0;
+        width: 100%;
+    }
 `
 
 export const ImgBg = styled.img`

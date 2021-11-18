@@ -1,7 +1,7 @@
 import React from 'react';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
-import { ServicesContainer, ServicesWrap, ServicesH1, ServicesH2, ServicesP, ServicesImg } from './ServicesElements';
+import { ServicesContainer, ServicesWrap, ServicesH2, ServicesP, ServicesImg } from './ServicesElements';
 import Icon1 from '../../assets/images/kahikateatree1.png';
 import Icon2 from '../../assets/images/kahikateatree2.png';
 import Icon3 from '../../assets/images/kahikateatree3.png';

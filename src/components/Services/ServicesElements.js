@@ -34,7 +34,7 @@ export const ServicesH2 = styled.h2`
     font-size: 1rem;
     letter-spacing: 4rem;
     text-align: center;
-    margin: 80px 0;
+    margin: 80px -4rem 80px 0;
 `
 
 export const ServicesP = styled.p`

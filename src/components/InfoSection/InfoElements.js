@@ -94,3 +94,13 @@ export const Img = styled.img`
     margin: 0 0 10px 0;
     padding-right: 0;
 `
+
+export const LetterImg = styled.img`
+    width: 50%;
+    display: block;
+    margin: 70px auto 100px;
+
+    @media screen and (max-width: 768px) {
+        width: 80%;
+    }  
+`

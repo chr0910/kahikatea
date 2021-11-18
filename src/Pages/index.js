@@ -11,6 +11,7 @@ import Sidebar from '../components/Sidebar';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import { ServicesH2 } from '../components/Services/ServicesElements';
+import { LetterImg } from '../components/InfoSection/InfoElements';
 
 
 const Home = () => {
@@ -18,11 +19,6 @@ const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => {
         setIsOpen(!isOpen)
-    }
-    const imgStyle = {
-        width: '30%',
-        display: 'block',
-        margin: '70px auto 100px',
     }
     
     return (
@@ -45,7 +41,7 @@ const Home = () => {
                 <InfoSection {...homeObjThree} />
             </Fade>
             <Fade bottom duration={2000}>
-                <img src={require('../assets/images/letter.jpg').default} alt="letter" style={imgStyle}/>
+                <LetterImg src={require('../assets/images/letter.jpg').default} alt="letter" />
             </Fade>
             <Fade bottom duration={2000}>
                 <InfoSection {...homeObjFour} />

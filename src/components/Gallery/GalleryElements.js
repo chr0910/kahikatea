@@ -4,6 +4,10 @@ export const GalleryRow = styled.div`
     display: flex;
     flex-wrap: wrap;
     padding: 100px;
+
+    @media screen and (max-width: 700px) {
+        padding: 50px;
+    }
 `
 
 export const GalleryColumn = styled.div`
