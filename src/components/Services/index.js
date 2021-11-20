@@ -12,14 +12,14 @@ const Services = () => {
         <ServicesContainer id="about">
             <Fade bottom duration={2000}>
                 <ServicesWrap>
-                    <ServicesP>It commemorates the 28 Japanese and all others who perished in the Christchurch earthquakes on 22nd February 2011 and was funded by the families in Japan.</ServicesP>
+                    <ServicesP>It commemorates the 28 Japanese and all others who perished in the Christchurch earthquakes on 22nd February 2011.</ServicesP>
                 </ServicesWrap>
             </Fade>
                 <ServicesImg src={Img} alt="forest" />
             <Fade bottom duration={2000}>
                 <ServicesWrap>
                     <ServicesP>The Base of the sculpture represents the New Zealand Native Tree "KAHIKATEA".</ServicesP>
-                    <ServicesP>The kahikatea tree grows in clumps, with  the roots and branches into twined like us today standing together  with arms linked. The Kahikatea tree grows tall and strong like a parents love for their children. The glass peak represents pure running water of a mountain stream flowing from the mountain top. The spirits of our love ones can travel to this world and return to heaven down.</ServicesP>
+                    <ServicesP>The kahikatea tree grows in clumps, with  the roots and branches into twined like us today standing together  with arms linked. The Kahikatea tree grows tall and strong like a parents love for their children. The glass peak represents pure running water of a mountain stream flowing from the mountain top. The spirits of our love ones and our prayer can travel to heaven through the purity of water.</ServicesP>
                 </ServicesWrap>
             </Fade>
             <Zoom duration={1000}>

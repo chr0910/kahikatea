@@ -11,6 +11,7 @@ import Img7 from '../../assets/images/202102212.jpg';
 import Img8 from '../../assets/images/Screenshot_20210222.jpg';
 import Img9 from '../../assets/images/Screenshot_20210201.jpg';
 import Img10 from '../../assets/images/kahikateaToyama.png';
+import Img11 from '../../assets/images/202102221.jpg';
 
 
 const Gallery = () => {
@@ -41,6 +42,9 @@ const Gallery = () => {
                 </ImgHoverZoom>
                 <ImgHoverZoom>
                     <GalleryImg src={Img8} alt="img" />
+                </ImgHoverZoom>
+                <ImgHoverZoom>
+                    <GalleryImg src={Img11} alt="img" />
                 </ImgHoverZoom>
                 <ImgHoverZoom>
                     <GalleryImg src={Img9} alt="img" />

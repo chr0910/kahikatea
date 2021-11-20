@@ -4,7 +4,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive } from '../components/InfoSection/Data';
+import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive, homeObjSix } from '../components/InfoSection/Data';
 import Navbar from '../components/Navbar';
 import Services from '../components/Services';
 import Sidebar from '../components/Sidebar';
@@ -48,6 +48,9 @@ const Home = () => {
             </Fade>
             <Fade bottom duration={2000}>
                 <InfoSection {...homeObjFive} />
+            </Fade>
+            <Fade bottom duration={2000}>
+                <InfoSection {...homeObjSix} />
             </Fade>
             <Zoom duration={1000}>
                 <ServicesH2>■■■</ServicesH2>
