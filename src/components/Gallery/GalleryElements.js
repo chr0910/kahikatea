@@ -42,3 +42,31 @@ export const ImgHoverZoom = styled.div`
         transform: scale(1.1);
     }
 `
+
+export const ImgHoverBody = styled.div`
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+`
+
+export const ImgHoverMask = styled.div`
+    width: 100% - 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 0.6s ease;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    padding-left: 20px;
+
+    &:hover {
+        opacity: 1;
+    }
+`

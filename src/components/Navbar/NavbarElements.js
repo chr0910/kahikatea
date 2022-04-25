@@ -75,7 +75,7 @@ export const NavLinks = styled(LinkS)`
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 0 2rem;
     height: 100%;
     cursor: pointer;
 
@@ -112,4 +112,34 @@ export const NavBtnLink = styled(LinkS)`
         background: #fff;
         color: #010606;
     }
+`
+
+export const NavDropdown = styled.ul`
+    display: ${({display}) => (display ? 'block' : 'none')};
+    right: 0;
+    left: auto;
+    box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
+        0 4px 6px -2px rgba(71, 63, 79, 0.16);
+    font-size: 0.875rem;
+    padding: 0.5rem 0;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 0.5rem;
+`
+
+export const NavDropdownItem = styled.li`
+    position: relative;
+    padding: 10px 0;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: rgba(130, 168, 116, 0.3);
+    }
+`
+
+export const NavDropdownLink = styled(LinkS)`
+    color: #010606;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
 `

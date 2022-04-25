@@ -1,5 +1,5 @@
 import React from 'react';
-import { GalleryRow, GalleryColumn, ImgHoverZoom, GalleryImg } from './GalleryElements';
+import { GalleryRow, GalleryColumn, ImgHoverZoom, GalleryImg, ImgHoverBody, ImgHoverMask } from './GalleryElements';
 import "react-multi-carousel/lib/styles.css";
 import Img1 from '../../assets/images/201902221.jpg';
 import Img2 from '../../assets/images/201902222.jpg';
@@ -16,11 +16,15 @@ import Img11 from '../../assets/images/202102221.jpg';
 
 const Gallery = () => {
     return (
-        <GalleryRow>
+        <GalleryRow id="gallery">
             <GalleryColumn>
-                <ImgHoverZoom>
-                    <GalleryImg src={Img1} alt="img" />
-                </ImgHoverZoom>
+                <ImgHoverBody>
+                    <ImgHoverZoom>
+                        <GalleryImg src={Img1} alt="img" />
+                        <ImgHoverMask>test test test</ImgHoverMask>
+                    </ImgHoverZoom>
+                </ImgHoverBody>
+                
                 <ImgHoverZoom>
                     <GalleryImg src={Img2} alt="img" />
                 </ImgHoverZoom>

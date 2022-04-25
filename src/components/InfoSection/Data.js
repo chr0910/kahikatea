@@ -7,7 +7,7 @@ import img_4 from '../../assets/images/prime_minister.jpg';
 import img_5 from '../../assets/images/202002263.jpg';
 
 export const homeObjOne = {
-    id: "services",
+    id: "stories",
     lightBg: true,
     lightText: false,
     lightTextDesc: false,

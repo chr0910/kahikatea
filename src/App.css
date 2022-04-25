@@ -8,7 +8,7 @@
   letter-spacing: 3px;
 }
 
-/* bubbles */
+/* bubbles
 @keyframes move {
   100% {
       transform: translate3d(0, 0, 1px) rotate(360deg);
@@ -97,5 +97,5 @@
   animation-delay: -10s;
   transform-origin: -24vw -20vh;
   box-shadow: 100vmin 0 12.618665821783303vmin currentColor;
-}
+} */
 
