@@ -45,7 +45,6 @@ export const Column2 = styled.div`
 `
 
 export const TextWrapper = styled.div`
-    max-width: 600px;
     padding-top: 0;
     padding-bottom: 60px;
 `
@@ -84,19 +83,17 @@ export const BtnWrap = styled.div`
 `
 
 export const ImgWrap = styled.div`
-    max-width: 550px;
     display: flex;
     justify-content: ${({imgStart}) => (imgStart ? 'flex-start' : 'flex-end')};
 `
 
 export const Img = styled.img`
     width: 80%;
-    margin: 0 0 10px 0;
     padding-right: 0;
 `
 
 export const LetterImg = styled.img`
-    width: 50%;
+    width: 30%;
     display: block;
     margin: 70px auto 100px;
 

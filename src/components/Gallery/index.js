@@ -1,68 +1,44 @@
 import React from 'react';
-import { GalleryRow, GalleryColumn, ImgHoverZoom, GalleryImg, ImgHoverBody, ImgHoverMask } from './GalleryElements';
-import "react-multi-carousel/lib/styles.css";
-import Img1 from '../../assets/images/201902221.jpg';
-import Img2 from '../../assets/images/201902222.jpg';
-import Img3 from '../../assets/images/202002263.jpg';
-import Img4 from '../../assets/images/202002261.jpg';
-import Img5 from '../../assets/images/202002262.jpg';
-import Img6 from '../../assets/images/202102211.jpg';
-import Img7 from '../../assets/images/202102212.jpg';
-import Img8 from '../../assets/images/Screenshot_20210222.jpg';
-import Img9 from '../../assets/images/Screenshot_20210201.jpg';
-import Img10 from '../../assets/images/kahikateaToyama.png';
-import Img11 from '../../assets/images/202102221.jpg';
-
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { GalleryWrap, ImgHoverZoom, GalleryImg, ImgHoverBody, ImgHoverMask } from './GalleryElements';
+import Video from './video';
+import { pictures } from './Data';
 
 const Gallery = () => {
+    const columns = Array.from(Array(4).keys());
+    const numberOfRow = Math.ceil(pictures.length / columns.length);
+    const rows = Array.from({length: numberOfRow}, (_, i) => i + 1);
+    let nextNumber = 0;
+
     return (
-        <GalleryRow id="gallery">
-            <GalleryColumn>
-                <ImgHoverBody>
-                    <ImgHoverZoom>
-                        <GalleryImg src={Img1} alt="img" />
-                        <ImgHoverMask>test test test</ImgHoverMask>
-                    </ImgHoverZoom>
-                </ImgHoverBody>
-                
-                <ImgHoverZoom>
-                    <GalleryImg src={Img2} alt="img" />
-                </ImgHoverZoom>
-            </GalleryColumn>
-            <GalleryColumn>
-                <ImgHoverZoom>
-                    <GalleryImg src={Img3} alt="img" />
-                </ImgHoverZoom>
-                <ImgHoverZoom>
-                    <GalleryImg src={Img4} alt="img" />
-                </ImgHoverZoom>
-                <ImgHoverZoom>
-                    <GalleryImg src={Img5} alt="img" />
-                </ImgHoverZoom>
-            </GalleryColumn>
-            <GalleryColumn>
-                <ImgHoverZoom>
-                    <GalleryImg src={Img7} alt="img" />
-                </ImgHoverZoom>
-                <ImgHoverZoom>
-                    <GalleryImg src={Img8} alt="img" />
-                </ImgHoverZoom>
-                <ImgHoverZoom>
-                    <GalleryImg src={Img11} alt="img" />
-                </ImgHoverZoom>
-                <ImgHoverZoom>
-                    <GalleryImg src={Img9} alt="img" />
-                </ImgHoverZoom>
-            </GalleryColumn>
-            <GalleryColumn>
-                <ImgHoverZoom>
-                    <GalleryImg src={Img6} alt="img" />
-                </ImgHoverZoom>
-                <ImgHoverZoom>
-                    <GalleryImg src={Img10} alt="img" />
-                </ImgHoverZoom>
-            </GalleryColumn>
-        </GalleryRow>
+        <Container id="gallery">
+            <Video />
+            <GalleryWrap>
+                <Row>
+                {columns.map((_, i) => {
+                    return (
+                        <Col key={i} sm={6} md={6} lg={3}>
+                        {rows.map((_, x) => {
+                            nextNumber = (i * numberOfRow);
+                            if (pictures[nextNumber + x]) {
+                                return (
+                                <ImgHoverBody key={x}>
+                                    <ImgHoverZoom>
+                                        <GalleryImg src={pictures[nextNumber + x].src} alt="img" />
+                                        <ImgHoverMask>test test test</ImgHoverMask>
+                                    </ImgHoverZoom>
+                                </ImgHoverBody>
+                                )
+                            }
+                        })}
+                        </Col>
+                    )
+                })}
+                </Row>
+            </GalleryWrap>
+        </Container>
     )
 }
 

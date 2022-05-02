@@ -1,27 +1,7 @@
 import styled from'styled-components';
 
-export const GalleryRow = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    padding: 100px;
-
-    @media screen and (max-width: 700px) {
-        padding: 50px;
-    }
-`
-
-export const GalleryColumn = styled.div`
-    flex: 25%;
-    max-width: 25%;
-
-    @media screen and (max-width: 800px) {
-        flex: 50%;
-        max-width: 50%;
-    }
-    @media screen and (max-width: 500px) {
-        flex: 100%;
-        max-width: 100%;
-    }
+export const GalleryWrap = styled.div`
+    margin: 100px 0;
 `
 
 export const GalleryImg = styled.img`
@@ -47,6 +27,7 @@ export const ImgHoverBody = styled.div`
     width: 100%;
     position: relative;
     overflow: hidden;
+    margin-bottom: 1rem;
 `
 
 export const ImgHoverMask = styled.div`
@@ -68,5 +49,30 @@ export const ImgHoverMask = styled.div`
 
     &:hover {
         opacity: 1;
+    }
+`
+
+export const VideoClip = styled.video`
+    width: 100%;
+`
+
+export const VideoImg = styled.img`
+    width: 180px;
+    margin: 3px;
+    cursor: pointer;
+`
+
+export const VideoInput = styled.input.attrs({ type: 'radio' })`
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    & + ${VideoImg} {
+        cursor: pointer
+    }
+
+    &:checked + ${VideoImg} {
+        outline: 3px solid #444;
     }
 `

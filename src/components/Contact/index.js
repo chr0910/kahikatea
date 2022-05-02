@@ -4,7 +4,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import { ContactSubmit, Form } from './ContactElements';
 import { TextField, Grid, Snackbar } from '@material-ui/core';
 import { Alert, AlertTitle } from '@material-ui/lab';
-import img_4 from '../../assets/images/walk_dreaming_u58a.svg';
 import { Column1, Column2, Heading, Img, ImgWrap, InfoContainer, InfoRow, InfoWrapper, Subtitle, TextWrapper, TopLine } from '../InfoSection/InfoElements';
 
 const useStyles = makeStyles((theme) => ({
@@ -107,7 +106,7 @@ export default function Contact() {
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                                <Img src={img_4} alt="contact" />
+                                <Img alt="contact" />
                             </ImgWrap>
                         </Column2>
                     </InfoRow>
