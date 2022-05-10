@@ -2,14 +2,14 @@ import React from 'react'
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Pages';
-import Signin from './Pages/signin';
+import Admin from './Pages/admin';
 
 function App() {
   return (
     <Router>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/" component={Signin} />
+        <Route path="/" component={Admin} />
       </Switch>
     </Router>
   );

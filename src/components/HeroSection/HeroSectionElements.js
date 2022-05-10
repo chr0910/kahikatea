@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 
 export const HeroContainer = styled.div`
-    background: #98A57E;
+    background: #93ac70;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import Gallery from '../components/Gallery';
-import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive, homeObjSix } from '../components/InfoSection/Data';
+import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive, homeObjSix, homeObjSeven, homeObjEight } from '../components/InfoSection/Data';
 import Navbar from '../components/Navbar';
-import Services from '../components/Services';
+import About from '../components/About';
 import Sidebar from '../components/Sidebar';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
-import { ServicesH2 } from '../components/Services/ServicesElements';
-import { LetterImg } from '../components/InfoSection/InfoElements';
+import { AboutH2 } from '../components/About/AboutElements';
+import { LetterImg, Year } from '../components/InfoSection/InfoElements';
+
 
 
 const Home = () => {
@@ -27,15 +27,18 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
             <HeroSection />
-            <Services />
+            <About />
+            <Zoom cascade duration={1000}>
+                <Year yearStart={true}>2012</Year>
+            </Zoom>
             <Fade bottom duration={2000}>
                 <InfoSection {...homeObjOne} />
             </Fade>
             <Fade bottom duration={2000}>
                 <InfoSection {...homeObjTwo} />
             </Fade>
-            <Zoom duration={1000}>
-                <ServicesH2>■■■</ServicesH2>
+            <Zoom cascade duration={1000}>
+                <Year yearStart={false}>2013</Year>
             </Zoom>
             <Fade bottom duration={2000}>
                 <InfoSection {...homeObjThree} />
@@ -43,18 +46,31 @@ const Home = () => {
             <Fade bottom duration={2000}>
                 <LetterImg src={require('../assets/images/letter.jpg').default} alt="letter" />
             </Fade>
+            <Zoom cascade duration={1000}>
+                <Year yearStart={true}>2014</Year>
+            </Zoom>
             <Fade bottom duration={2000}>
                 <InfoSection {...homeObjFour} />
             </Fade>
             <Fade bottom duration={2000}>
                 <InfoSection {...homeObjFive} />
             </Fade>
+            <Zoom cascade duration={1000}>
+                <Year yearStart={false}>2020</Year>
+            </Zoom>
             <Fade bottom duration={2000}>
                 <InfoSection {...homeObjSix} />
             </Fade>
-            <Zoom duration={1000}>
-                <ServicesH2>■■■</ServicesH2>
+            <Fade bottom duration={2000}>
+                <InfoSection {...homeObjSeven} />
+            </Fade>
+            <Zoom cascade duration={1000}>
+                <Year yearStart={true}>2022</Year>
             </Zoom>
+            <Fade bottom duration={2000}>
+                <InfoSection {...homeObjEight} />
+            </Fade>
+                <AboutH2></AboutH2>
             <Gallery />
             <Footer />
         </>

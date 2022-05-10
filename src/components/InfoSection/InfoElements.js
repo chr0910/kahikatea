@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
     color: #fff;
-    background: ${({lightBg}) => (lightBg ? '#fff' : '#010606')};
 `
 
 export const InfoWrapper = styled.div`
@@ -22,6 +21,7 @@ export const InfoWrapper = styled.div`
 `
 
 export const InfoRow = styled.div`
+    padding: 0 15px;
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
@@ -34,13 +34,11 @@ export const InfoRow = styled.div`
 
 export const Column1 = styled.div`
     margin-bottom: 15px;
-    padding: 0 15px;
     grid-area: col1;
 `
 
 export const Column2 = styled.div`
     margin-bottom: 15px;
-    padding: 0 15px;
     grid-area: col2;
 `
 
@@ -90,6 +88,10 @@ export const ImgWrap = styled.div`
 export const Img = styled.img`
     width: 80%;
     padding-right: 0;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
 `
 
 export const LetterImg = styled.img`
@@ -100,4 +102,23 @@ export const LetterImg = styled.img`
     @media screen and (max-width: 768px) {
         width: 80%;
     }  
+`
+
+export const Year = styled.h1`
+    margin: 30px 50px 0;
+    z-index: 10;
+    color: rgba(146, 166, 118, 0.6);
+    font-size: 150px;
+    font-weight: 700;
+    letter-spacing: 100px;
+    float: ${({yearStart}) => (yearStart ? 'left' : 'right')};
+
+    @media screen and (max-width: 768px) {
+        font-size: 100px;
+        letter-spacing: 50px;
+    }
+    @media screen and (max-width: 480px) {
+        font-size: 80px;
+        letter-spacing: 30px;
+    }
 `

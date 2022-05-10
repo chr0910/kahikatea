@@ -20,7 +20,7 @@ const InfoSection = ({
     }) => {
     return (
         <>
-            <InfoContainer lightBg={lightBg} id={id}>
+            <InfoContainer id='stories'>
                 <InfoWrapper>
                     <InfoRow imgStart={imgStart}>
                         <Column1>

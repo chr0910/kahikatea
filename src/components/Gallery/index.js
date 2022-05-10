@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { GalleryWrap, ImgHoverZoom, GalleryImg, ImgHoverBody, ImgHoverMask } from './GalleryElements';
+import { GalleryWrap, ImgHoverZoom, GalleryImg, ImgHoverBody, ImgHoverMask, VideoWrap } from './GalleryElements';
 import Video from './video';
 import { pictures } from './Data';
 
@@ -13,32 +13,38 @@ const Gallery = () => {
     let nextNumber = 0;
 
     return (
-        <Container id="gallery">
-            <Video />
-            <GalleryWrap>
-                <Row>
-                {columns.map((_, i) => {
-                    return (
-                        <Col key={i} sm={6} md={6} lg={3}>
-                        {rows.map((_, x) => {
-                            nextNumber = (i * numberOfRow);
-                            if (pictures[nextNumber + x]) {
-                                return (
-                                <ImgHoverBody key={x}>
-                                    <ImgHoverZoom>
-                                        <GalleryImg src={pictures[nextNumber + x].src} alt="img" />
-                                        <ImgHoverMask>test test test</ImgHoverMask>
-                                    </ImgHoverZoom>
-                                </ImgHoverBody>
-                                )
-                            }
-                        })}
-                        </Col>
-                    )
-                })}
-                </Row>
-            </GalleryWrap>
-        </Container>
+        <div id="gallery">
+            <VideoWrap>
+                <Container>
+                    <Video />
+                </Container>
+            </VideoWrap>
+            <Container>
+                <GalleryWrap>
+                    <Row>
+                    {columns.map((_, i) => {
+                        return (
+                            <Col key={i} sm={6} md={6} lg={3}>
+                            {rows.map((_, x) => {
+                                nextNumber = (i * numberOfRow);
+                                if (pictures[nextNumber + x]) {
+                                    return (
+                                    <ImgHoverBody key={x}>
+                                        <ImgHoverZoom>
+                                            <GalleryImg src={pictures[nextNumber + x].src} alt="img" />
+                                            <ImgHoverMask>{pictures[nextNumber + x].text}</ImgHoverMask>
+                                        </ImgHoverZoom>
+                                    </ImgHoverBody>
+                                    )
+                                }
+                            })}
+                            </Col>
+                        )
+                    })}
+                    </Row>
+                </GalleryWrap>
+            </Container>
+        </div>
     )
 }
 

@@ -5,10 +5,12 @@ import img_2 from '../../assets/images/blessing_service.jpg';
 import img_3 from '../../assets/images/202102212.jpg';
 import img_4 from '../../assets/images/prime_minister.jpg';
 import img_5 from '../../assets/images/202002263.jpg';
+import img_6 from '../../assets/images/kahikateaToyama.png';
+import img_7 from '../../assets/images/20220224_1.jpg';
+import img_8 from '../../assets/images/20220222_1.jpg';
 
 export const homeObjOne = {
     id: "stories",
-    lightBg: true,
     lightText: false,
     lightTextDesc: false,
     topLine: "",
@@ -24,8 +26,7 @@ export const homeObjOne = {
 }
 
 export const homeObjTwo = {
-    id: "signup",
-    lightBg: true,
+    id: "stories",
     lightText: false,
     lightTextDesc: false,
     topLine: "",
@@ -41,8 +42,7 @@ export const homeObjTwo = {
 }
 
 export const homeObjThree = {
-    id: "signup",
-    lightBg: true,
+    id: "stories",
     lightText: false,
     lightTextDesc: false,
     topLine: "",
@@ -58,8 +58,7 @@ export const homeObjThree = {
 }
 
 export const homeObjFour = {
-    id: "signup",
-    lightBg: true,
+    id: "stories",
     lightText: false,
     lightTextDesc: false,
     topLine: "",
@@ -75,8 +74,7 @@ export const homeObjFour = {
 }
 
 export const homeObjFive = {
-    id: "signup",
-    lightBg: true,
+    id: "stories",
     lightText: false,
     lightTextDesc: false,
     topLine: "",
@@ -92,15 +90,44 @@ export const homeObjFive = {
 }
 
 export const homeObjSix = {
-    id: "signup",
-    lightBg: true,
+    id: "stories",
     lightText: false,
     lightTextDesc: false,
     topLine: "",
     headline: "",
     description: "Mayor of Christchurch Lianne Dalziel, Matt Nichols, International Relations Manager and David Bolam-Smith attended Maori Blessing for the Toyama Kahikatea Sculpture on Wednesday 26 February 2020. The dedication was performed by Kaharoa Manihera a representative of Ngai Tahu Christchurch.",
+    imgStart: true,
+    img: img_6,
+    alt: "dreaming",
+    dark: false,
+    primary: false,
+    darkText: true
+}
+
+export const homeObjSeven = {
+    id: "stories",
+    lightText: false,
+    lightTextDesc: false,
+    topLine: "",
+    headline: "",
+    description: "This photo was taken at the Christchurch Transitional Cathedral on the Anaversary of the CHRISTCHURCH EARTHQUAKE. There was an evening service and everyone was invited to place a twig of pahutakawa on the sculpture and pray for the victims of the Christchurch earthquake. The Cathedral hold this service each year.",
     imgStart: false,
-    img: img_5,
+    img: img_7,
+    alt: "dreaming",
+    dark: false,
+    primary: false,
+    darkText: true
+}
+
+export const homeObjEight = {
+    id: "stories",
+    lightText: false,
+    lightTextDesc: false,
+    topLine: "",
+    headline: "",
+    description: "Canterbury Earthquake 2022. Ambassador Ito Japan Dean of the Christchurch Transitional Cathedral Lawrence Kimberley and myself making a prayer in front of the Kahikatea Earthquake Memorial Sculpture for the 28 Japanese students that died in the CTV building.",
+    imgStart: true,
+    img: img_8,
     alt: "dreaming",
     dark: false,
     primary: false,

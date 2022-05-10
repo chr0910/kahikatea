@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ServicesContainer = styled.div`
+export const AboutContainer = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -8,20 +8,19 @@ export const ServicesContainer = styled.div`
     align-items: center;
 `
 
-export const ServicesWrap = styled.div`
+export const AboutWrap = styled.div`
     margin: 20% auto 0;
 `
 
-export const ServicesImg = styled.img`
+export const AboutImg = styled.img`
     width: 100%;
     object-fit: cover;
     opacity: 0.8;
     margin-top: 10%;
 `
 
-export const ServicesH1 = styled.h1`
+export const AboutH1 = styled.h1`
     font-size: 2.5rem;
-    color: #707070;
     margin-bottom: 64px;
 
     @media screen and (max-width: 480px) {
@@ -29,7 +28,7 @@ export const ServicesH1 = styled.h1`
     }
 `
 
-export const ServicesH2 = styled.h2`
+export const AboutH2 = styled.h2`
     color: #98A57E;
     font-size: 1rem;
     letter-spacing: 4rem;
@@ -37,10 +36,10 @@ export const ServicesH2 = styled.h2`
     margin: 80px -4rem 80px 0;
 `
 
-export const ServicesP = styled.p`
+export const AboutP = styled.p`
     max-width: 600px;
-    margin: 20px 30px;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 1.3rem;
     text-align: center;
+    padding: 0 15px;
 `

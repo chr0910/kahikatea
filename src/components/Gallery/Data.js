@@ -18,46 +18,57 @@ export const pictures = [
     {
         id: 0,
         src: pic0,
+        text: 'test',
     },
     {
         id: 1,
         src: pic1,
+        text: '',
     },
     {
         id: 2,
         src: pic2,
+        text: '',
     },
     {
         id: 3,
         src: pic3,
+        text: '',
     },
     {
         id: 4,
         src: pic4,
+        text: '',
     },
     {
         id: 5,
         src: pic5,
+        text: '',
     },
     {
         id: 6,
         src: pic6,
+        text: '',
     },
     {
         id: 7,
         src: pic7,
+        text: '',
     },
     {
         id: 8,
         src: pic8,
+        text: '',
     },
     {
         id: 9,
         src: pic9,
+        text: '',
     },
     {
         id: 10,
         src: pic10,
+        text: '',
     },
 ];
 

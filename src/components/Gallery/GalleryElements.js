@@ -10,7 +10,7 @@ export const GalleryImg = styled.img`
     margin: 0;
     padding: 0;
     border: 0;
-    transition:  transform .5s ease;
+    transition: transform .5s ease;
 `
 
 export const ImgHoverZoom = styled.div`
@@ -49,6 +49,15 @@ export const ImgHoverMask = styled.div`
 
     &:hover {
         opacity: 1;
+    }
+`
+
+export const VideoWrap = styled.div`
+    padding: 100px 20%;
+    background: rgba(147, 172, 112, 0.6);
+
+    @media screen and (max-width: 768px) {
+        padding: 100px 0;
     }
 `
 
