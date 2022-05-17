@@ -1,7 +1,4 @@
 import styled from 'styled-components';
-import { BiRightArrowAlt } from 'react-icons/bi';
-import { FaArrowRight } from "react-icons/fa";
-
 
 export const HeroContainer = styled.div`
     background: #93ac70;
@@ -62,38 +59,4 @@ export const HeroH1 = styled.h1`
     @media screen and (max-width: 480px) {
         font-size: 32px;
     }
-`
-
-export const HeroP = styled.p`
-    margin-top: 24px;
-    color: #fff;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 18px;
-    text-align: center;
-    max-width: 600px;
-
-    @media screen and (max-width: 768px) {
-        font-size: 24px;
-    }
-
-    @media screen and (max-width: 480px) {
-        font-size: 18px;
-    }
-`
-
-export const HeroBtnWrapper = styled.div`
-    margin-top: 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`
-
-export const RightArrow = styled(BiRightArrowAlt)`
-    margin-left: 8px;
-    font-size: 20px;
-`
-
-export const ArrowRight = styled(FaArrowRight)`
-    margin-left: 8px;
-    font-size: 20px;
 `

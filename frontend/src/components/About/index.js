@@ -1,9 +1,7 @@
 import React from 'react';
-import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import { AboutContainer, AboutWrap, AboutH2, AboutP, AboutImg } from './AboutElements';
 import Img from '../../assets/images/forest.png';
-import { VideoWrap } from '../Gallery/GalleryElements';
 
 const About = () => {
     return (

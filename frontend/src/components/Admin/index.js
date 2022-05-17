@@ -3,7 +3,6 @@ import { Container, Form, FormButton, FormContent, FormH1, FormInput, FormLabel,
 
 const Admin = () => {
     const [fileInput, setFileInput] = useState('');
-    const [previewSource, setPreviewSource] = useState('');
     const [selectedFile, setSelectedFile] = useState('');
     const [successMsg, setSuccessMsg] = useState('');
     const [errMsg, setErrMsg] = useState('');

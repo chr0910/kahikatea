@@ -1,6 +1,5 @@
 import React from 'react';
-import { Button } from '../ButtonElements';
-import { BtnWrap, Column1, Column2, Heading, Img, ImgWrap, InfoContainer, InfoRow, InfoWrapper, Subtitle, TextWrapper, TopLine } from './InfoElements';
+import { Column1, Column2, Heading, Img, ImgWrap, InfoContainer, InfoRow, InfoWrapper, Subtitle, TextWrapper, TopLine } from './InfoElements';
 
 const InfoSection = ({
     lightBg,

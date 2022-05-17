@@ -1,6 +1,6 @@
 import React from 'react';
 import Zoom from 'react-reveal/Zoom';
-import { HeroContainer, HeroBg, ImgBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, RightArrow, ArrowRight } from './HeroSectionElements';
+import { HeroContainer, HeroBg, ImgBg, HeroContent, HeroH1 } from './HeroSectionElements';
 import Img from '../../assets/images/kahikatea.jpg'
 
 
