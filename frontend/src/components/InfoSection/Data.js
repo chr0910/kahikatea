@@ -125,7 +125,7 @@ export const homeObjEight = {
     lightTextDesc: false,
     topLine: "",
     headline: "",
-    description: "Canterbury Earthquake 2022. Ambassador Ito Japan Dean of the Christchurch Transitional Cathedral Lawrence Kimberley and myself making a prayer in front of the Kahikatea Earthquake Memorial Sculpture for the 28 Japanese students that died in the CTV building.",
+    description: "Canterbury Earthquake 2022. Ambassador Ito Japan Dean of the Christchurch Transitional Cathedral Lawrence Kimberley and myself making a prayer in front of the Kahikatea Earthquake Memorial Sculpture for the 28 Japanese students who died in the CTV building at the time of the Christchurch Earthquake 2011.",
     imgStart: true,
     img: img_8,
     alt: "dreaming",

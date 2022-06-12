@@ -12,23 +12,15 @@ const Footer = () => {
     return (
         <FooterContainer>
             <FooterWrap>
-                {/* <FooterLinksContainer>
+                <FooterLinksContainer>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle></FooterLinkTitle>
-                                <FooterLink to="/signin"></FooterLink>
-                                <FooterLink to="/signin"></FooterLink>
-                                <FooterLink to="/signin"></FooterLink>
-                                <FooterLink to="/signin"></FooterLink>
-                                <FooterLink to="/signin"></FooterLink>
+                                <FooterLink href="https://www.cardboardcathedral.org.nz/">Christchurch Transitional Cathedral</FooterLink>
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle></FooterLinkTitle>
-                                <FooterLink to="/signin"></FooterLink>
-                                <FooterLink to="/signin"></FooterLink>
-                                <FooterLink to="/signin"></FooterLink>
-                                <FooterLink to="/signin"></FooterLink>
-                                <FooterLink to="/signin"></FooterLink>
+                                <FooterLink href="https://www.tcfl.ac.jp/">Toyama College of Foreign Languages</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>
@@ -49,7 +41,7 @@ const Footer = () => {
                                 <FooterLink to="/signin"></FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
-                </FooterLinksContainer> */}
+                </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
                         <FooterLink to="/" onClick={toggleHome}><img src={logo} width="70px" /></FooterLink>

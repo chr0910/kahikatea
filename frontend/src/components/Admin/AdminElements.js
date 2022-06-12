@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const Container = styled.div`
-    min-height: 692px;
+export const FormContainer = styled.div`
     position: fixed;
     top: 0;
     right: 0;
@@ -11,17 +10,6 @@ export const Container = styled.div`
     z-index: 0;
     overflow: hidden;
     background: rgba(147, 172, 112, 0.6);
-`
-
-export const FormWrap = styled.div`
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    @media screen and (max-width: 400px) {
-        height: 80%;
-    }
 `
 
 export const Icon = styled(Link)`
@@ -38,18 +26,7 @@ export const Icon = styled(Link)`
     }
 `
 
-export const FormContent = styled.div`
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    @media screen and (max-width: 480px) {
-        padding: 10px;
-    }
-`
-
-export const Form = styled.form`
+export const UploadForm = styled.form`
     background: #fff;
     max-width: 400px;
     height: auto;
@@ -79,9 +56,12 @@ export const FormLabel = styled.label`
     color: #010101;
 `
 
-export const FormInput = styled.input`
-    padding: 16px;
-    margin-bottom: 32px;
+export const FormFile = styled.input`
+    margin-bottom: 20px;
+`
+export const FormTextarea = styled.textarea`
+    padding: 10px;
+    margin-bottom: 20px;
     border: 1px solid #eee;
     border-radius: 4px;
 `
@@ -101,4 +81,10 @@ export const Text = styled.span`
     margin-top: 24px;
     color: #010101;
     font-size: 14px;
+`
+
+export const FormPreviewImg = styled.img`
+    width: 200px;
+    display: block;
+    margin: 10px auto;
 `

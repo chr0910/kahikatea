@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection';
@@ -12,14 +12,25 @@ import Zoom from 'react-reveal/Zoom';
 import { AboutH2 } from '../components/About/AboutElements';
 import { LetterImg, Year } from '../components/InfoSection/InfoElements';
 
-
-
 const Home = () => {
     // open mobile sidebar menu
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => {
         setIsOpen(!isOpen)
     }
+    const [images, setImages] = useState();
+    const loadImages = async () => {
+        try {
+            const res = await fetch('/api/images');
+            const data = await res.json();
+            setImages(data);
+        } catch (err) {
+            console.error(err);
+        }
+    };
+    useEffect(() => {
+        loadImages();
+    }, []);
     
     return (
         <>
@@ -71,7 +82,10 @@ const Home = () => {
                 <InfoSection {...homeObjEight} />
             </Fade>
                 <AboutH2></AboutH2>
-            <Gallery />
+            {images 
+                ? <Gallery data={images} />
+                : null
+            }
             <Footer />
         </>
     )
